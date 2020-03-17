@@ -1,0 +1,41 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #eee;
+}
+
+/* COLOR */
+.bg-success {
+  background: #56bd66 !important;
+}
+
+.bg-dark {
+  background: #4c4c4c !important;
+}
+
+.text-success {
+  color: #56bd66 !important;
+}
+
+.text-secondary {
+  color: #4c4c4c !important;
+}
+
+.border-success {
+  border-color: #56bd66 !important;
+}
+
+.border-dark {
+  border-color: #4c4c4c !important;
+}
+
+.badge-secondary {
+  background: #4c4c4c !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .result-bar {
+    margin-left: 0px !important;
+  }
+}

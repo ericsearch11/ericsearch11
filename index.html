@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eric Search</title>
+
+    <!-- Boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/style/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header shadow" style="background: white;">
+      <div class="container p-0">
+        <nav
+          class="navbar navbar-light bg-light pl-0 pr-0"
+          style="height: 64px;"
+        >
+          <a class="navbar-brand">
+            <img src="/assets/img/logo.svg" alt="" class="logo" />
+          </a>
+          <form class="form-inline border border-dark" id="form_search">
+            <select
+              class="custom-select"
+              id="inputGroupSelect01"
+              style="width: 90px; border: none"
+            >
+              <option value="author" selected>author</option>
+              <option value="title">title</option>
+              <option value="description">description</option>
+              <option value="isbn">isbn</option>
+              <option value="issn">issn</option>
+              <option value="language">language</option>
+              <option value="peerreviewed">viewed</option>
+              <option value="publicationdateyear">years</option>
+              <option value="publicationtype">type</option>
+              <option value="publisher">publisher</option>
+              <option value="subject">subject</option>
+            </select>
+            <div class="input-group pr-2">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                style="border: none"
+                id="search"
+              />
+              <button
+                class="search-button"
+                type="submit"
+                style="border: none; background: none;"
+              >
+                <img src="/assets/img/search.svg" alt="" width="16" />
+              </button>
+            </div>
+          </form>
+        </nav>
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Body -->
+    <div class="body">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-12 p-0 mt-5">
+            <h5 class="d-inline text-success font-weight-bold search-head">
+              Search :
+            </h5>
+            <h5 class="d-inline text-secondary font-weight-bolder search-text">
+              ""
+            </h5>
+            <div class="card border border-success mt-2 shadow card-found">
+              <div
+                class="card-header bg-success text-light m-0 p-1 pl-2 card-found-bg"
+              >
+                <h5 class="m-0"><strong>Found</strong></h5>
+              </div>
+              <div class="card-body m-0 p-1 pl-2">
+                <div
+                  class="d-inline rounded-circle bg-success"
+                  style="width: 17px; height: 17px;"
+                >
+                  &nbsp;&nbsp;&nbsp;
+                </div>
+
+                <h6 class="d-inline m-0 text-secondary match-found">
+                  &nbsp;&nbsp;Match 0
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-7 col-12 mt-5 result-bar"
+            style="margin-left: 73px;"
+          >
+            <div
+              class="row content-result-bar shadow bg-dark d-flex align-items-center text-light"
+              style="height: 32px"
+            >
+              <div class="col-12">
+                <img src="/assets/img/dropdown.svg" alt="" />
+                &nbsp;&nbsp;<strong class="found">not found</strong>
+              </div>
+            </div>
+            <div
+              class="row content-result overflow-auto"
+              style="max-height: 525px"
+            >
+              <div class="card my-2 shadow" style="width: 100%;">
+                <div class="card-body p-3 text-secondary">
+                  <h5 class="card-title">
+                    <strong
+                      >Babbling: A Definition & Overview of Theories.</strong
+                    >
+                  </h5>
+                  <h6 class="card-subtitle mb-3">
+                    An overview of the babbling stage in child language
+                    acquisition, which occurs normally at age six months to one
+                    year, looks at research on this period.
+                  </h6>
+                  <p class="card-text text-success" style="line-height: 0.3;">
+                    Alam, Samsul <strong class="text-secondary">(1998)</strong>
+                  </p>
+                  <p class="card-text mb-4" style="line-height: 0;">
+                    <small class="text-primary"
+                      ><strong class="text-secondary">ISSN/ISBN : </strong>
+                      ISSN-1938-5978</small
+                    >
+                  </p>
+                  <span class="badge badge-secondary">Economi</span>
+                  <span class="badge badge-secondary">Politic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Body -->
+
+    <!-- Boostrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom js -->
+    <script src="/assets/js/bundle.js"></script>
+  </body>
+</html>
