@@ -10,7 +10,7 @@
     "@babel/preset-env": "^7.8.7"
   },
   "scripts": {
-    "babel": "node_modules/.bin/babel src/index.js -o assets/js/bundle.js"
+    "babel": "node_modules/.bin/babel src/index.js -o js/main.js"
   },
   "keywords": [],
   "author": "",
